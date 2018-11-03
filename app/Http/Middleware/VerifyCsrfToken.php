@@ -12,6 +12,8 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        //
+        //排出不需要csrf_token验证的路由
+        '/member/create','/member/login','/address/store','/address/update','cart/store'
+        ,'member/update','member/edit','order/store',
     ];
 }
